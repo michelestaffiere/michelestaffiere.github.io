@@ -96,13 +96,6 @@ nav li{
     flex-direction:  row;
     justify-content: space-evenly;
 }
-/* #circle {
-    width: 100px;
-    height: 100px;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-    border-radius: 50px;
-} */
 #social-img{
     display: flex;
     margin: 0 auto;
