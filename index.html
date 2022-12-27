@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="/resources/favicon.ico"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,20 +22,15 @@
         <h2>My Story</h2>
         <div id="story-container">
             <div id="my-story">
-               <p>My passion for tech dates back to my childhood, when my father worked in networking and I had the opportunity to explore commercial-grade server rooms.
-                  My father installed server-grade equipment in the 90s to mid 2000s before deciding to leave the tech industry. His work sparked my interest and led me to become
-                  known as the "tech guy" among my friends, frequently answering questions about PC hardware. I eventually got a job at a local computer hardware store and began
-                  and later began teaching myself how to code once i realized what i studied in college wasn't what i wanted to do with my life. Starting with web development, Despite struggling with math and logic in the past,
-                  I believe anyone can learn to code and invite you to join me on this journey. 
-                  My page will receive regular updates until I am fully employed in the tech field and may transform into something else as I continue to pursue my passion.</p> 
+               <p>My passion for tech dates back to my childhood, when my father worked in networking and I had the opportunity to explore commercial-grade server rooms. My father installed server-grade equipment in the 90s to mid 2000s before deciding to leave the tech industry. His work sparked my interest and led me to become known as the "tech guy" among my friends, frequently answering questions about PC hardware, building multiple high-end systems for gaming and production purposes. I eventually got a job at a local computer hardware store just to be closer to the tech world. Despite struggling with math and logic in the past, I began teaching myself how to code once I realized what I studied in college wasn't what I wanted to do with my life. Ultimately, I started with web development simply because it had the lowest bar for entry and was something I found fun to tinker with. I strongly believe anyone can learn to code with enough dedication and the right mindset, and I'm inviting you to join me on this journey. My page will receive regular updates until I am fully employed in the tech field, and it may transform into something else as I continue to pursue my passion.</p> 
             </div>
-            <div id="picture">
-                <img src='./resources/photome1.jpeg' alt="me getting ready to squat heavy">
+            <div >
+                <img src='./resources/photome1.jpeg' alt="me getting ready to squat heavy" id="picture">
             </div> 
         </div>
     </div>
 </section>
-<section id="Projects">
+<section id="projects">
     <div id="wrapper">
         <h2>Projects Coming Soon!</h2>
         <ol>
@@ -43,41 +39,49 @@
         </ol>
     </div>
 </section>
-<section id="Contact">
+<section id="socials">
+    <div id="wrapper">
+        <h2>My Socials</h2>
+            <div>
+                <p>Thanks for checking out my portfolio!
+                I'm glad you're here to learn more about me and my work. If you want to get to know me even better, be sure to check out my social media profiles. This is your opportunity to get to know me on a personal level. I hope to see you online soon!</p>
+            </div>
+            <div id="social-links">
+                <div id="cirlce"><a href="https://github.com/michelestaffiere" target="_blank"><img src="./resources/github.png" alt="Github hyperlink logo" id="social-img"></a></div>
+                <a href="https://medium.com/" target="_blank"><img src="./resources/medium.png" alt="Medium hyperlink logo" id="social-img"></a>
+                <a href="https://www.linkedin.com/in/michelestaffiere/" target="_blank"><img src="./resources/linkedin.png" alt="LinkedIn hyperlink logo" id="social-img"></a>
+            </div>
+    </div> 
+</section>
+
+<section id="contact">
     <div id="wrapper">
         <h2>Contact Me!</h2>
         <div id="contactform">
             <!-- TODO: Debug form -->
             <!-- Form currently not working Formspree error: Make sure you have placed the "name" attribute in all your form elements. Also, to prevent empty form submissions, see the "required" property. -->
             
-            <form action="https://formspree.io/f/xgebwpak" method="post" name="emailform" enctype="text/plain">
+            <form action="https://formspree.io/portpageemail@gmail.com" method="post" name="emailform" enctype="text/plain" class="myform">
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" required>
                 <label for="email">E-Mail:</label>
                 <input type="text" name="email" id="email" required><br>
                 <label for="'message">Message:</label><br>
-                <textarea type="text" name="message" id="message" cols="5" rows="30" minlength="20" maxlength="500"> Send me a E-mail! :)
-                </textarea><br>
+                <textarea type="text" name="message" id="message" cols="5" rows="30" minlength="20" maxlength="500" placeholder="Send me a E-mail! :)"></textarea><br>
                 <button type="submit" id="sendbutton">Send</button>
             </form>
-
+            
         </div>
         <!-- TODO: CONTACT FORM. -->
     </div>
 </section>
-<section id="Socials">
-    <div id="wrapper">
-        <h2>My Socials</h2>
-    <!-- TODO: 3 LINKS, INLINE MAYBE BEST TO USE FLEXBOX, LINK TO GITHUB,INSTAGRAM AND LINKEDIN -->
-    </div>    
-</section>
-</body>
 <hr>
 <footer>
- <pre>
-    <a>Sources</a> used
-    Copyright 2022  
- </pre>
+    <pre>
+        <a>Sources</a> used
+        Copyright 2022  
+    </pre>
 </footer>
-</html>
+</body>
 
+</html>
